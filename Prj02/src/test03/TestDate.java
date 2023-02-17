@@ -1,0 +1,29 @@
+package test03;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class TestDate {
+
+	public static void main(String[] args) {
+		   // 현재 날짜 구하기
+        LocalDate now = LocalDate.now();
+ 
+        // 포맷 정의
+        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
+ 
+        // 포맷 적용
+        String formatedNow = now.format(formatter);
+ 
+        // 결과 출력
+        System.out.println(formatedNow);
+        LocalDate now1 = LocalDate.now();
+        DateTimeFormatter Formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        String formatedNow1 = now1.format(Formatter);
+        System.out.println(formatedNow1);
+	}
+   
+	
+}
+
